@@ -19,3 +19,17 @@ function countDuplicates(strOfData) {
 }
 
 console.log(countDuplicates("aabbcde"));
+
+function removeNumbers(str) {
+    let sp = str.split();
+    let word = '';
+    for(let ele of sp){
+        if(typeof ele === "string"){
+            word += str.replace(/[0-9]/g, '');;
+        }
+    }
+
+    return word;
+}
+
+console.log(removeNumbers("ade213"));
